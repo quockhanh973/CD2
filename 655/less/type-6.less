@@ -1,0 +1,80 @@
+.type-6{
+    a{
+        text-decoration: none;
+    }
+    .box_mid{
+        .mid-title{
+            position: relative;
+            border-bottom: 1px solid #e5e5e5;
+            .titleL{
+                text-align: center;
+                font-family: 'Roboto Regular', arial;
+                text-transform: uppercase;
+                color:#000000;
+            }
+            .titleL h1{
+                font-size: 40px;
+                line-height: 50px;
+                font-family: 'Roboto Regular', arial;
+                font-weight: normal;
+            }
+
+        }
+        .mid-title:after{
+            position: absolute;
+            width: 300px;
+            height: 1px;
+            left: 40%;
+            content:"";
+            background-color:#01b360;
+        }
+    }
+    .menu-category{
+        width: auto;
+        border-bottom: 1px solid #e5e5e5;
+        ul{
+            margin: 0 0 -4px 0;
+            padding: 0;
+            text-align: center;
+            li{
+                display: inline-block;
+                font-size: 16px;
+                line-height: 24px;
+                color: #333333;
+                font-family: 'Roboto Regular', arial;
+                margin: 0 2px;
+                .current a{
+                    background-color:#00af5a;
+                    color: #ffffff;
+                    font-family: 'Roboto Bold', arial;
+                }
+                a{
+                    color: #333333;
+                    display: block;
+                    padding:13px 20px;
+                }
+                .hovers_effect{
+                    position:relative;
+                    overflow:hidden;
+                    .hovers_text{
+                        position:relative;
+                        z-index:2;
+                    }
+                }
+            }
+            li:hover {
+                background-color:#00af5a;
+                .hovers_effect{
+                    .hovers_text{
+                        color:#fff;
+                    }
+                }
+            }
+            .active {
+                color: white;
+                background-color:#00af5a;
+                font-weight: bold;
+            }
+        }
+    }
+}
